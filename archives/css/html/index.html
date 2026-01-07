@@ -8,55 +8,68 @@
 
     <link rel="stylesheet" href="/archives/css/style.css">
 
-    <script src="/archives/css/script/index.js"></script>
-
+    <script src="index.js" defer></script>
 </head>
 
 <body>
 
-    <h1>CALCULADORA DO BETA</h1>
-
+    <h1 class="titulo">CALCULADORA DO BETA</h1>
 
     <div class="calculator">
-
         <input type="text" id="display" disabled value="0">
 
         <div class="buttons">
 
-            <button onclick="clearDisplay()">C</button>
+            <button onclick="limparVisor()">C</button>
 
-            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="adicionarAoVisor('/')">/</button>
 
-            <button onclick="appendToDisplay('*')">X</button>
+            <button onclick="adicionarAoVisor('*')">X</button>
 
-            <button onclick="calculate()">=</button>
+            <button onclick="calcular()">=</button>
 
-            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="adicionarAoVisor('7')">7</button>
 
-            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="adicionarAoVisor('8')">8</button>
 
-            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="adicionarAoVisor('9')">9</button>
 
-            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="adicionarAoVisor('-')">-</button>
 
-            <button onclick="appendToDisplay('4')">4</button>
 
-            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="adicionarAoVisor('4')">4</button>
 
-            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="adicionarAoVisor('5')">5</button>
 
-            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="adicionarAoVisor('6')">6</button>
 
-            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="adicionarAoVisor('+')">+</button>
 
-            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="adicionarAoVisor('1')">1</button>
 
-            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="adicionarAoVisor('2')">2</button>
 
-            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="adicionarAoVisor('3')">3</button>
+
+            <button onclick="adicionarAoVisor('0')">0</button>
+
         </div>
+
     </div>
 
+
+    <div id="meuPopUp" class="modal">
+
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharPopUp()">&times;</span>
+            <h2>Sobrou nada!</h2>
+            <p>O resultado é <strong>0</strong>.</p>
+            <p>A Calculadora do Beta nunca erra!</p>
+            <button class="btn-ok" onclick="fecharPopUp()">Entendido</button>
+
+        </div>
+
+    </div>
 
 </body>
 
