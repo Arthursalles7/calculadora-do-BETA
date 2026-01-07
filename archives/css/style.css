@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #d3d3d3;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@ body {
 
 .titulo {
     text-align: center;
-    color: #00000054;
+    color: #000000;
     margin-bottom: 20px;
     box-shadow: #ff0000;
 }

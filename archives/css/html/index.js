@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (visor.value === "Não sobra nada pro beta!!!!!") {
                     visor.value = "0";
                 }
-            }, 2500);
+            }, 5000);
 
         } else {
             // Se não houver operação, avisa que falta algo
