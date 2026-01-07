@@ -10,18 +10,19 @@ body {
 
 .titulo {
     text-align: center;
-    color: #333;
+    color: #00000054;
     margin-bottom: 20px;
+    box-shadow: #ff0000;
 }
 
 .calculator {
     width: 95%;
     max-width: 350px;
-    background: #333;
+    background: #000000;
     padding: 15px;
     border-radius: 20px;
     margin: 20px auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 30px rgba(228, 4, 4, 0.4);
 }
 
 #display {
@@ -34,7 +35,7 @@ body {
     box-sizing: border-box;
     border-radius: 10px;
     border: none;
-    background: #eee;
+    background: #ffffff;
     color: #ff0000;
     font-weight: bold;
     display: flex;
@@ -52,7 +53,7 @@ button {
     padding: 20px 10px;
     cursor: pointer;
     border: none;
-    background: #555;
+    background: #6b6b6b63;
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
@@ -72,3 +73,5 @@ button:hover {
 @media (max-width: 360px) {
     button {
         padding: 15px 5px;
+    }
+}

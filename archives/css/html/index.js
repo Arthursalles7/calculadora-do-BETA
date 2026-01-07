@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Opcional: Faz o visor voltar ao "0" depois de 2.5 segundos
             setTimeout(() => {
-                if (visor.value === "Não sobra nada pro beta!!") {
+                if (visor.value === "Não sobra nada pro beta!!!!!") {
                     visor.value = "0";
                 }
             }, 2500);
